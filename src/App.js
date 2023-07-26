@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button } from "@mui/material";
+import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button variant="text">Text</Button>
+      <Button variant="contained" color= "secondary" startIcon = {<AccessAlarmsIcon/>}>Contained</Button>
+      <Button variant="outlined" endIcon = {<AccessAlarmsIcon/>}>Outlined</Button>
     </div>
   );
 }
